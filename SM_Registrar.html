@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Registrar</title>
+    <style>
+        .form{
+            position: absolute;
+            top: 15%;
+            left: 25%;
+            box-shadow: 0 0 10px #1b82ff;
+            width: 50%;
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(20px);
+            background: #1c1c1dda;
+        }
+        input, label, select{
+            width: 100%;
+            box-shadow: var(--outer-shadow);
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: .5rem 0;
+            outline: none;
+            color: #fff;
+        }
+        input:hover{
+            box-shadow: var(--inner-shadow);
+        }
+        .btn, .option-btn, .delete-btn{
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: var(--outer-shadow);
+            color: #fff;
+            border-color: #1b82ff;
+            outline:none;
+            background-color: #1b82ff;
+        }
+        .option-btn{
+            color:#fff;
+        }
+        a:hover{
+            color: #fff;
+        }
+        h3 {
+        font-size: 2em;
+        color: #1b82ff;
+        text-align: center;
+        font-family: Roboto;
+        }
+        p{
+            color: #fff;
+        font-family: sans-serif;
+        font-size: 17px;
+        }
+    </style>
+</head>
+<body class="contacto_body">   
+    <header>
+        <h2 class="Logo">SMMS EVENTOS</h2>
+            <nav class="navegación">
+
+                <a href="SM_index.html">Volver al Inicio</a>
+            </nav>
+    </header>
+
+    <div class="form">
+        <form method="post" enctype="multipart/form-data">
+            <h3>Registrar Evento</h3>
+            <br>
+            <p>
+                Através de este formulario, puede registrar su evento.
+            </p>
+            <br>
+            <label for="name" class="form-label">Nombre Completo:</label>
+            <input type="text" id="nombre" class="form-input" placeholder= "Escribe tu nombre..."  required>
+            <label for="">Descripción del Evento:</label>
+            <input type="text" name="descripcion" placeholder="Ingrese la descripción del evento" required>
+            <label for="">Cantidad de Invitados:</label>
+            <input type="number" name="cantidad" placeholder="Ingrese la cantidad de invitados" required>
+            <label for="">Imagen del Pago Realizado:</label>
+            <input type="file" name="imagen" accept="image/png, image/jpg, image/jpeg"required>
+            <input type="submit" name="registrar" value="Registrar Evento" class="btn">
+        </form>
+    </div>
+
+</body>
+</html>
